@@ -46,8 +46,8 @@ class Memo {
     this.currentData = { fn, arg }
 
     return this.store[fn.name]?.has(arg) ?
-      this._return(fn, arg) :
-      this._add(fn, arg)
+      this._return() :
+      this._add()
   }
 
   /**
